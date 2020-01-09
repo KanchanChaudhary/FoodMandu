@@ -5,41 +5,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/foooood"
+    android:background="@drawable/f"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btncontinue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/title"
-        android:text="FoodMandu"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="20dp"
-        />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:id="@+id/etusername"
-        android:textSize="70sp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="200dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:id="@+id/etpassword"
-        android:textSize="70sp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="40dp"
-        />
-
+        android:textSize="20dp"
+        android:background="@drawable/button_size"
+        android:text="CONTINUE >>>>"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#f91010" />
 
 
 </LinearLayout>
