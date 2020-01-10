@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kanchan.foodmandu.bll.LoginBLL;
+import com.kanchan.foodmandu.strictmode.StrictModeClass;
 
 public class LoginActivity extends AppCompatActivity {
     private Button btnlogin;
@@ -45,8 +46,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         btnlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            @Override public void onClick(View view) {
                 login();
             }
         });
@@ -57,6 +57,18 @@ public class LoginActivity extends AppCompatActivity {
         String password=etpassword.getText().toString();
 
         LoginBLL loginBLL=new LoginBLL();
+
+        StrictModeClass.StrictMode();
+        if (loginBLL.checkUser(username, password)) {
+            Intent intent = new Intent(LoginActivity.this, Dashboard.class);
+            startActivity(intent);
+            finish();
+//          Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
+            etusername.requestFocus();
+        }
+
     }
 
 }
