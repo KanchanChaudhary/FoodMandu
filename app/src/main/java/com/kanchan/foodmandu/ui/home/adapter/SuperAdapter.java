@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.kanchan.foodmandu.R;
 import com.kanchan.foodmandu.ui.home.model.superViewmodel;
-import com.kanchan.foodmandu.ui.home.model.superViewmodel;
 
 import java.util.List;
 
@@ -30,7 +29,7 @@ public class SuperAdapter extends RecyclerView.Adapter<SuperAdapter.SuperViewHol
     @Override
     public SuperViewHoler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.,parent,false);
+                .inflate(R.layout.facebook,parent,false);
         return new SuperViewHoler(view);
     }
 

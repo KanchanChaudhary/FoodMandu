@@ -21,7 +21,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.kanchan.foodmandu.R;
 import com.kanchan.foodmandu.ui.home.adapter.categoryAdapter;
 import com.kanchan.foodmandu.ui.home.adapter.SuperAdapter;
-import com.foodmandu.ui.home.Adapter.ViewPagerAdapter;
+import com.kanchan.foodmandu.ui.home.adapter.ViewPagerAdapter;
 import com.kanchan.foodmandu.ui.home.model.superViewmodel;
 
 import java.util.ArrayList;

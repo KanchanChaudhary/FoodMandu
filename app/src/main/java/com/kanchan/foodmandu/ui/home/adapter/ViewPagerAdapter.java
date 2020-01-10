@@ -1,4 +1,4 @@
-package com.foodmandu.ui.home.Adapter;
+package com.kanchan.foodmandu.ui.home.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -40,7 +40,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
 
         LayoutInflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = ((LayoutInflater) LayoutInflater).inflate(R.layout.image_slider,null);
+        View view = ((LayoutInflater) LayoutInflater).inflate(R.layout.imageslider,null);
         ImageView imageView=(ImageView) view.findViewById(R.id.imageView);
         imageView.setImageResource(images[position]);
 
