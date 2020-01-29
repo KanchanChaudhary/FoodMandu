@@ -1,6 +1,6 @@
 package com.kanchan.foodmandu.serverresponse;
 
-public class SignUpResponse {
+public class    SignUpResponse {
 
     private String status;
     private String token;
